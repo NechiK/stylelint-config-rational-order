@@ -57,9 +57,9 @@ Stylelint config that sorts related property declarations by grouping together f
 1.  Add `stylelint`, `stylelint-order` and this package to your project:
 
 ```bash
-npm install --save-dev stylelint stylelint-order stylelint-config-rational-order
+npm install --save-dev stylelint stylelint-order NechiK/stylelint-config-rational-order
 # or, if you prefer yarn over npm:
-yarn add --dev stylelint stylelint-order stylelint-config-rational-order
+yarn add --dev stylelint stylelint-order NechiK/stylelint-config-rational-order
 ```
 
 2.  Add this package to the end of your extends array inside Stylelint
