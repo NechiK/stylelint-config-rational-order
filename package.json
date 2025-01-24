@@ -34,7 +34,7 @@
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "jest": "^24.7.1",
+    "jest": "^24.7.1"
   },
   "homepage": "https://github.com/constverum/stylelint-config-rational-order"
 }
