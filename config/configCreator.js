@@ -1,12 +1,12 @@
-const special = require('../groups/special');
-const positioning = require('../groups/positioning');
-const boxModel = require('../groups/boxModel');
-const typography = require('../groups/typography');
-const visual = require('../groups/visual');
-const animation = require('../groups/animation');
-const misc = require('../groups/misc');
+import special from '../groups/special.js';
+import positioning from '../groups/positioning.js';
+import boxModel from '../groups/boxModel.js';
+import typography from '../groups/typography.js';
+import visual from '../groups/visual.js';
+import animation from '../groups/animation.js';
+import misc from '../groups/misc.js';
 
-module.exports = ({
+export default ({
   'border-in-box-model': borderInBoxModel = false,
   'empty-line-between-groups': emptyLineBetweenGroups = false,
 } = {}) =>

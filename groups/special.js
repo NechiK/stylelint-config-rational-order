@@ -1,1 +1,1 @@
-module.exports = ['composes', '@import', '@extend', '@mixin', '@at-root'];
+export default ['composes', '@import', '@extend', '@mixin', '@at-root'];

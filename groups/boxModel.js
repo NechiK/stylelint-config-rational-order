@@ -1,4 +1,4 @@
-const borderProps = require('./border');
+import borderProps from './border.js';
 
 const partOne = [
   'display',
@@ -58,4 +58,4 @@ const partOne = [
 
 const partTwo = ['object-fit', 'object-position', 'overflow', 'overflow-x', 'overflow-y'];
 
-module.exports = ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);
+export default ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);
