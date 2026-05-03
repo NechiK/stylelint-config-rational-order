@@ -1,17 +1,19 @@
-const path = require('path');
-const specialProps = require('../groups/special');
+import { fileURLToPath } from 'url';
+import special from '../groups/special.js';
 
-module.exports = ({
+const pluginPath = fileURLToPath(new URL('../plugin/index.js', import.meta.url));
+
+export default ({
   'border-in-box-model': borderInBoxModel = false,
   'empty-line-between-groups': emptyLineBetweenGroups = false,
 } = {}) => ({
-  plugins: ['stylelint-order', path.join(__dirname, '../plugin')],
+  plugins: ['stylelint-order', pluginPath],
   rules: {
     'order/properties-order': [],
     'property-no-unknown': [
       true,
       {
-        ignoreProperties: specialProps,
+        ignoreProperties: special,
       },
     ],
     'plugin/rational-order': [

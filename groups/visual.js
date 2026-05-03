@@ -1,4 +1,4 @@
-const borderProps = require('./border');
+import borderProps from './border.js';
 
 const partOne = [
   'list-style',
@@ -45,4 +45,4 @@ const partTwo = [
   'mix-blend-mode',
 ];
 
-module.exports = ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);
+export default ({ border }) => [].concat(partOne, border ? borderProps : [], partTwo);

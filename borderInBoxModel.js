@@ -5,6 +5,6 @@
 ==================================================================
 */
 
-const config = require('./config/extendedStylelintOrderConfig');
+import config from './config/extendedStylelintOrderConfig.js';
 
-module.exports = config({ 'border-in-box-model': true });
+export default config({ 'border-in-box-model': true });
